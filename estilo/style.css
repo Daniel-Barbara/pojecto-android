@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-size: normal;
+}
+
+:root {
+    --cor1:#8988F2;
+    --cor2:#403EF0;
+    --cor3:#3331BD;
+    --cor4:#1F1D70;
+    --cor5:#403F70;
+
+    --fonte-droid: 'android', cursive;
+    --fonte-destaque: 'Roboto', cursive;
+    --fonte-normal: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-normal);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    color: white;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    padding-bottom: 50px;
+    box-shadow: 0px 45px 20px black
+    
+}
+
+header h1 {
+    padding: 10px 20px;
+    text-shadow: 1px 5px 6px black;
+    font-weight: larger;
+    font-size: 3em;
+}
+
+header > p {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    padding: 30px 10px 10px 10px;
+    text-shadow: 1px 7px 4px black;
+    
+}
+
+nav {
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 10px 10px 5px 10px; 
+    
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 0.8em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.642);
+}
+    
+nav a:hover {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 2px 10px;
+    transition-duration: 1s;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.564);
+}
+
+main h2 {
+    font-family: var(--fonte-droid);
+    color: var(--cor5);
+    font-size: 1.6em;
+    font-weight: normal;
+    text-indent: 10px;
+    padding: 10px;
+}
+
+main h3 {
+    font-family: var(--fonte-droid);
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+    padding: 10px;
+}
+
+main > p {
+    font-family: var(--fonte-normal);
+    font-size: 1.1em;
+    text-indent: 10px;
+    text-align: justify;
+    padding: 15px;
+}
+
+main img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: auto;
+}
+
+main img.bugdroid {
+    max-width: 300px;
+    
+}
+
+main h3.aprender {
+    
+    font-family: var(--fonte-droid);
+    font-size: 1.7em;
+    font-weight: normal;
+    color: var(--cor5);
+    background-image: linear-gradient(to top, var(--cor2), transparent);
+    text-indent: 10px;
+    padding: 10px 0px 10px 0px;
+    margin: 20px 20px 0px 20px;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+
+main a {
+    background-color: var(--cor1);
+    text-decoration: none;
+    color: black;
+    padding: 2px
+}
+main a:hover {
+        color:white;
+}
+
+main a::after {
+    content: '\00A0\1F517';
+}
+
+div.video {
+    
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    font-family: var(--fonte-normal);
+    font-size: 0.9em;
+    text-indent: 10px;
+    text-align: justify;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor2));
+    color: white;
+    padding: 0px 10px;
+    margin: 0px 20px 20px 20px;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+
+aside > p {
+    font-family: var(--fonte-normal);
+    font-size: 1.1em;
+    text-indent: 10px;
+    text-align: justify;
+    padding: 15px;
+}
+
+aside> ul {
+    padding: 15px;
+    list-style: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: normal;
+    padding: 10px;
+    color: white;
+    background-color: var(--cor5);
+}
